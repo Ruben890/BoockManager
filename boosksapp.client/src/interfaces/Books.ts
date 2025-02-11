@@ -1,4 +1,6 @@
-export interface BookDto {
+import { Response } from "./Response";
+
+export interface BookDto extends Response<BookDto> {
     Id: number;
     Title?: string;
     Description?: string;
