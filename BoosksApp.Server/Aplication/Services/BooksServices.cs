@@ -1,4 +1,4 @@
-﻿using BoosksApp.Server.Aplication.Interfaces.IServices;
+﻿using BoosksApp.Server.Aplication.Interfaces;
 using BoosksApp.Server.Aplication.Utils;
 using BoosksApp.Server.Application.Utils;
 using BoosksApp.Server.Shared;

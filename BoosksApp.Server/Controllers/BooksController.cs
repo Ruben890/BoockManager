@@ -1,4 +1,4 @@
-﻿using BoosksApp.Server.Aplication.Interfaces.IServices;
+﻿using BoosksApp.Server.Aplication.Interfaces;
 using BoosksApp.Server.Shared.Dto;
 using Microsoft.AspNetCore.Mvc;
 

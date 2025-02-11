@@ -1,4 +1,4 @@
-using BoosksApp.Server.Aplication.Interfaces.IServices;
+using BoosksApp.Server.Aplication.Interfaces;
 using BoosksApp.Server.Application.Services;
 using BoosksApp.Server.Application.Utils;
 using Microsoft.AspNetCore.HttpOverrides;

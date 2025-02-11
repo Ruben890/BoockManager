@@ -1,7 +1,7 @@
 ﻿using BoosksApp.Server.Shared;
 using BoosksApp.Server.Shared.Dto;
 
-namespace BoosksApp.Server.Aplication.Interfaces.IServices
+namespace BoosksApp.Server.Aplication.Interfaces
 {
     public interface IBooksServices
     {
