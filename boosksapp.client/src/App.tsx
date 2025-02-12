@@ -15,12 +15,11 @@ function App() {
     }, []);
 
     const toggleOpen = (bookId: string) => {
-        // Cambia el estado para abrir o cerrar el libro dependiendo de si está abierto o no
-        setOpenBook(prev => (prev === bookId ? null : bookId)); // Si el libro está abierto, lo cerramos
+        setOpenBook(prev => (prev === bookId ? null : bookId));
     };
 
     if (!books) {
-        return <div>Loading...</div>; // Mostrar cargando si los libros no están disponibles
+        return <div>Loading...</div>; 
     }
 
     return (
@@ -31,8 +30,8 @@ function App() {
                         <Grid item xs={12} sm={6} md={4} key={index}>
                             <BookCard 
                                 book={book} 
-                                isOpen={openBook === book.Title} // Verifica si este libro está abierto
-                                toggleOpen={toggleOpen} // Pasar la función de toggle
+                                isOpen={openBook === book.Title} 
+                                toggleOpen={toggleOpen}
                             />
                         </Grid>
                     ))}
