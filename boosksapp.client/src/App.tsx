@@ -81,7 +81,7 @@ function App() {
                 zIndex={2}
                 width="100%"
                 sx={{
-                    background: "#ecf0f1",
+                    background: "#f5f5f5",
                     boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.22)", // Sombra sutil
                     borderBottom: "2px solid #ccc", // Línea separadora en la parte inferior
                     borderRadius: "8px", // Bordes redondeados para el contenedor
