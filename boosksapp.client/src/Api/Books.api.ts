@@ -4,7 +4,7 @@ import { BookDto } from "../Interfaces/Books";
 const baseUrl: string = `${import.meta.env.VITE_BASE_URL_API}/Books`;
 
 // Obtener libros (todos o por ID)
-export const GetBooks = async (id?: number): Promise<Response<BookDto>> => {
+export const GetBooks = async (id?: number | null): Promise<Response<BookDto>> => {
     const url = id ? `${baseUrl}/${id}` : baseUrl;
     return fetchData<Response<BookDto>>(url, 'GET');
 };
