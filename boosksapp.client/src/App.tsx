@@ -127,7 +127,7 @@ function App() {
 
             {/* Mostrar loading si no hay libros */}
             {!books.length && !errorMessage && (
-                <Box display="flex" justifyContent="center" alignItems="center" minHeight="50vh">
+                <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh" alignContent='center'>
                     <CircularProgress size="5rem" />
                 </Box>
             )}
