@@ -6,8 +6,8 @@ interface BookProps {
     book: BookDto;
     isOpen: boolean;
     toggleOpen: (bookId: number) => void;
-    handleUpdate: (bookId: number) => void;
-    handleDelete: (bookId: number) => void;
+    handleUpdate: () => void;
+    handleDelete: () => void;
 }
 
 // Función para formatear la fecha en dd/MM/yyyy
@@ -23,7 +23,7 @@ export const BookCard: React.FC<BookProps> = ({ book, isOpen, toggleOpen, handle
             variant="outlined"
             sx={{
                 width: '20rem',
-                height: isOpen ? '75vh' : '48vh',
+                height: isOpen ? '78vh' : '50vh',
                 textAlign: 'center',
                 p: 2,
                 borderRadius: 2,
@@ -69,7 +69,7 @@ export const BookCard: React.FC<BookProps> = ({ book, isOpen, toggleOpen, handle
                     size="small"
                     variant="contained"
                     color="primary"
-                    onClick={() => handleUpdate(book.Id!)}
+                    onClick={() => handleUpdate()}
                 >
                     Actualizar
                 </Button>
@@ -77,7 +77,7 @@ export const BookCard: React.FC<BookProps> = ({ book, isOpen, toggleOpen, handle
                     size="small"
                     variant="contained"
                     color="error"
-                    onClick={() => handleDelete(book.Id!)}
+                    onClick={() => handleDelete()}
                 >
                     Eliminar
                 </Button>

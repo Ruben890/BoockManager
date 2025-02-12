@@ -4,7 +4,6 @@ using BoosksApp.Server.Application.Utils;
 using BoosksApp.Server.Shared;
 using BoosksApp.Server.Shared.Dto;
 using Newtonsoft.Json;
-using System;
 using System.Net;
 
 namespace BoosksApp.Server.Application.Services
