@@ -38,9 +38,9 @@ function App() {
     };
 
     return (
-        <Box display="flex" flexDirection="column" alignItems="center" minHeight="100vh" padding={3}>
+        <Box display="flex" flexDirection="column" alignItems="center" minHeight="100vh" padding={3} zIndex={3}>
             {errorMessage && (
-                <Alert severity="error" sx={{ marginBottom: 2 }}>
+                <Alert severity="error" sx={{ marginBottom: 2,  zIndex:3, position:'fixed', top:'13vh'}}>
                     {errorMessage}
                 </Alert>
             )}
