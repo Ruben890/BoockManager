@@ -54,7 +54,7 @@ export const UpdateBookModal: React.FC<UpdateBookModalProps> = ({ book, showModa
                         width: '100%',
                         padding: '5px'
                     }}>
-                    Agregar Libro
+                    Actulizar Libro
                 </Button>
                 {message && <p>{message}</p>}
             </Box>
